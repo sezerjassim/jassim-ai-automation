@@ -1,0 +1,19 @@
+:root{
+  --bg:#0b0d12;--panel:#121620;--text:#f5f7fb;--muted:#a8b0bf;--line:#252b38;--accent:#dfe7ff;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit}.nav{max-width:1120px;margin:auto;padding:24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{text-decoration:none;font-weight:800;letter-spacing:-.02em}.nav nav{display:flex;gap:22px}.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--text)}main{max-width:1120px;margin:auto;padding:0 24px}.hero{padding:110px 0 90px;max-width:850px}
+.badge,.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+h1{font-size:clamp(2.8rem,7vw,5.7rem);line-height:.98;letter-spacing:-.055em;margin:18px 0 24px}
+h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;letter-spacing:-.04em;margin:12px 0 28px}h3{margin-top:0}
+.lead{font-size:1.25rem;color:var(--muted);max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.button{display:inline-block;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:12px 18px;font-weight:700}
+.button.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.section{padding:78px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}.card p,.split>p,.contact>p{color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px}.contact{max-width:760px}footer{max-width:1120px;margin:auto;padding:34px 24px 48px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;color:var(--muted)}
+footer a{text-decoration:none}
+@media(max-width:760px){.nav nav{display:none}.hero{padding:76px 0 64px}.grid,.split{grid-template-columns:1fr}.split{gap:0}footer{flex-direction:column}}
